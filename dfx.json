@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "post_upgrade_exp_backend": {
+      "candid": "src/post_upgrade_exp_backend/post_upgrade_exp_backend.did",
+      "package": "post_upgrade_exp_backend",
+      "type": "rust"
+    },
+    "post_upgrade_exp_frontend": {
+      "dependencies": [
+        "post_upgrade_exp_backend"
+      ],
+      "source": [
+        "src/post_upgrade_exp_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
